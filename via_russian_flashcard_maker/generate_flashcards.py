@@ -15,6 +15,7 @@ class Flashcard:
     self.junk = False
     self.header = None
     self.errors = []
+    self.sides = []
 
   
   def set_up(self, line, header):
@@ -25,20 +26,20 @@ class Flashcard:
 
   def create_sides(self):
 
-    sides = self.line.split('-')
-    if len(sides) == 2:
-      if normalizer.is_cyrillic(sides[0]) and normalizer.is_latin(sides[1]):
-        self.russian = sides[0].strip()
-        self.english = sides[1].strip()
-      elif normalizer.is_cyrillic(sides[1]) and normalizer.is_latin(sides[0]):
-        self.russian = sides[1].strip()
-        self.english = sides[0].strip()
+    self.sides = self.line.split('-')
+    if len(self.sides) == 2:
+      if normalizer.is_cyrillic(self.sides[0]) and normalizer.is_latin(self.sides[1]):
+        self.russian = self.sides[0].strip()
+        self.english = self.sides[1].strip()
+      elif normalizer.is_cyrillic(self.sides[1]) and normalizer.is_latin(self.sides[0]):
+        self.russian = self.sides[1].strip()
+        self.english = self.sides[0].strip()
       else:
         self.junk = True
         self.errors.append("Can't separate English from Russian")
-    elif len(sides) != 2:
+    elif len(self.sides) != 2:
       self.junk = True
-      self.errors.append('Wrong number of sides')
+      self.errors.append(f'Card needs 2 sides, but has {len(self.sides)}.')
   
   def generate_tags(self):
     if self.header:
@@ -73,6 +74,7 @@ class Generator:
 
         if x.junk == True:
           print(x.russian, ';', x.english)
+          print(x.sides)
           print(f'Date: {x.date}\nTutor: {x.tutor}')
           print(f'Error: {x.errors}\n')
 
