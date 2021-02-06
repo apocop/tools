@@ -14,7 +14,7 @@ class Flashcard:
     self.tutor = None
     self.junk = False
     self.header = None
-    self.errors = []
+    self.error = ''
     self.sides = []
 
 
@@ -26,6 +26,7 @@ class Flashcard:
     self.generate_tags()
 
   def create_sides(self):
+    """Create flash card sides."""
 
     self.sides = self.line.split('-')
     if len(self.sides) == 2:
@@ -37,10 +38,10 @@ class Flashcard:
         self.english = self.sides[0].strip()
       else:
         self.junk = True
-        self.errors.append("Can't separate English from Russian")
+        self.error += "Can't separate English from Russian"
     elif len(self.sides) != 2:
       self.junk = True
-      self.errors.append(f'Card needs 2 sides, but has {len(self.sides)}.')
+      self.error += f'Card needs 2 sides, but has {len(self.sides)}.'
 
   def generate_tags(self):
     if self.header:
@@ -49,7 +50,7 @@ class Flashcard:
         self.date = f"{match.group('month')} {match.group('day')},{match.group('year')}"
         self.tutor = match.group('tutor')
     else:
-      self.errors.append('Card has no header')
+      self.error += 'Card has no header'
 
 class Generator:
   def __init__(self):
@@ -87,23 +88,14 @@ class Generator:
           self.junk_deck.append(card)
         else:
           self.card_deck.append(card)
-
     self.print_report()
-    self.print_junk_cards()
 
-  
-  def print_junk_cards(self):
-
-
-    for junk in self.junk_deck:
-      print(f'Line: "{junk.line}"')
-      print(f'Russian: "{junk.russian}"')
-      print(f'English: "{junk.english}"')
-      print(f'Sides: {junk.sides}')
-      print(f'Date: {junk.date}')
-      print(f'Tutor: {junk.tutor}')
-      print(f'Error: {junk.errors}\n')
-
+  def junk_to_tsv(self, path):
+    junk_cards = 'Error\tLine\tSides\tDate\tTutor\n'
+    for card in self.junk_deck:
+      junk_cards += f'{card.error}\t{card.line}\t{card.sides}\t{card.date}\t{card.tutor}\n'
+    with open(path, 'w', encoding='utf-8') as f:
+      f.write(junk_cards)
 
 class Normalizer():
   def __init__(self):
@@ -127,7 +119,9 @@ class Normalizer():
 
 path = r'./via_russian_flashcard_maker/conversation.txt'
 export_path = r'./via_russian_flashcard_maker/cards.tsv'
+junk_path = r'./via_russian_flashcard_maker/junk_cards.tsv'
 normalizer = Normalizer()
 generator = Generator()
 generator.generate_flashcards(path)
 generator.cards_to_tsv(export_path)
+generator.junk_to_tsv(junk_path)
