@@ -17,8 +17,9 @@ class Flashcard:
     self.errors = []
     self.sides = []
 
-  
-  def set_up(self, line, header):
+
+  def fill_out(self, line, header):
+    """Fill out a new flash card"""
     self.line = line
     self.header = header
     self.create_sides()
@@ -40,7 +41,7 @@ class Flashcard:
     elif len(self.sides) != 2:
       self.junk = True
       self.errors.append(f'Card needs 2 sides, but has {len(self.sides)}.')
-  
+
   def generate_tags(self):
     if self.header:
       match = re.match(normalizer.lesson_header, self.header)
@@ -53,30 +54,55 @@ class Flashcard:
 class Generator:
   def __init__(self):
     self.card_deck = []
+    self.junk_deck = []
     self.last_header = None
+
+  def print_report(self):
+    """Print a final report about the cards."""
+
+    print('--- Flash Card Maker ---')
+    print(f'Total number of cards created: {len(self.card_deck)}')
+    print(f'Unused lines of text: {len(self.junk_deck)}')
+
+  def cards_to_tsv(self, path):
+    """Export valid flashcards to TSV"""
+  
+    flashcards = ''
+    for card in self.card_deck:
+      flashcards += f'{card.english}\t{card.russian}\ttags:{card.date} {card.tutor}\n'
+    with open(path, 'w', encoding='utf-8') as f:
+      f.write(flashcards)
 
 
   def generate_flashcards(self, path):
     with open(path, 'r', encoding='utf-8') as f:
-
       lines = [line for line in f.read().splitlines() if line.strip() != '']
-      for line in lines:
-        if normalizer.is_lesson_header(line):
-          self.last_header = line
-
+    for line in lines:
+      if normalizer.is_lesson_header(line):
+        self.last_header = line
+      else:
         card = Flashcard()
-        card.set_up(line, self.last_header)
-        self.card_deck.append(card)
+        card.fill_out(line, self.last_header)
+        if card.junk:
+          self.junk_deck.append(card)
+        else:
+          self.card_deck.append(card)
 
-      print(len(self.card_deck))
+    self.print_report()
+    self.print_junk_cards()
 
-      for x in self.card_deck:
+  
+  def print_junk_cards(self):
 
-        if x.junk == True:
-          print(x.russian, ';', x.english)
-          print(x.sides)
-          print(f'Date: {x.date}\nTutor: {x.tutor}')
-          print(f'Error: {x.errors}\n')
+
+    for junk in self.junk_deck:
+      print(f'Line: "{junk.line}"')
+      print(f'Russian: "{junk.russian}"')
+      print(f'English: "{junk.english}"')
+      print(f'Sides: {junk.sides}')
+      print(f'Date: {junk.date}')
+      print(f'Tutor: {junk.tutor}')
+      print(f'Error: {junk.errors}\n')
 
 
 class Normalizer():
@@ -100,7 +126,8 @@ class Normalizer():
 
 
 path = r'./via_russian_flashcard_maker/conversation.txt'
-
+export_path = r'./via_russian_flashcard_maker/cards.tsv'
 normalizer = Normalizer()
 generator = Generator()
 generator.generate_flashcards(path)
+generator.cards_to_tsv(export_path)
