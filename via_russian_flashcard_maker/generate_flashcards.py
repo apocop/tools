@@ -49,7 +49,8 @@ class Flashcard:
     if self.header:
       match = re.match(normalizer.lesson_header, self.header)
       if match:
-        self.date = f"{match.group('month')} {match.group('day')},{match.group('year')}"
+        month = MONTHS[match.group('month').title()]
+        self.date = f"{month}/{match.group('day')}/{match.group('year')}"
         self.tutor = match.group('tutor')
     else:
       self.error += 'Card has no header'
@@ -72,10 +73,9 @@ class Generator:
   
     flashcards = ''
     for card in self.card_deck:
-      flashcards += f'{card.english}\t{card.russian}\ttags:{card.date} {card.tutor}\n'
+      flashcards += f'{card.english}\t{card.russian}\t{card.date} {card.tutor}\n'
     with open(path, 'w', encoding='utf-8') as f:
       f.write(flashcards)
-
 
   def generate_flashcards(self, path):
     with open(path, 'r', encoding='utf-8') as f:
@@ -125,6 +125,21 @@ class Normalizer():
     else:
       return en.lower(), ru.lower()
 
+
+MONTHS = {
+  'January': 1,
+  'February': 2,
+  'March': 3,
+  'April': 4,
+  'May': 5,
+  'June': 6,
+  'July': 7,
+  'August': 8,
+  'September': 9,
+  'October': 10,
+  'November': 11,
+  'December': 12
+}
 
 path = r'./via_russian_flashcard_maker/conversation.txt'
 export_path = r'./via_russian_flashcard_maker/cards.tsv'
