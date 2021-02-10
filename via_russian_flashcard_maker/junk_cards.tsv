@@ -1,4 +1,5 @@
 Error	Line	Sides	Date	Tutor
+Can't separate English from Russian	Мы едим где-нибудь	['Мы едим где', 'нибудь']	2/05/2021	Julia
 Can't separate English from Russian	Город - города	['Город ', ' города']	1/26/2021	Natasha
 Can't separate English from Russian	Дело - 	['Дело ', ' ']	1/20/2021	Vitaliy
 Can't separate English from Russian	32 - тридцать два	['32 ', ' тридцать два']	1/20/2021	Vitaliy
@@ -6,6 +7,20 @@ Can't separate English from Russian	Восемь - 8	['Восемь ', ' 8']	1/0
 Can't separate English from Russian	Плюс - +	['Плюс ', ' +']	1/08/2021	Nastya
 Can't separate English from Russian	Минут - –	['Минут ', ' –']	1/08/2021	Nastya
 Can't separate English from Russian	Цельсия - С	['Цельсия ', ' С']	1/08/2021	Nastya
+Card needs 2 sides, but has 1.	С другими друзьями 	['С другими друзьями ']	2/08/2021	Alisa
+Card needs 2 sides, but has 1.	С друзьями	['С друзьями']	2/08/2021	Alisa
+Card needs 2 sides, but has 1.	Разные страны 	['Разные страны ']	2/08/2021	Alisa
+Card needs 2 sides, but has 1.	Произношение 	['Произношение ']	2/08/2021	Alisa
+Card needs 2 sides, but has 1.	Заниматься	['Заниматься']	2/08/2021	Alisa
+Card needs 2 sides, but has 1.	Заниматься спортом	['Заниматься спортом']	2/08/2021	Alisa
+Card needs 2 sides, but has 1.	Заниматься русским	['Заниматься русским']	2/08/2021	Alisa
+Card needs 2 sides, but has 1.	На чём ты играешь?	['На чём ты играешь?']	2/05/2021	Julia
+Card needs 2 sides, but has 1.	Классическая музыка	['Классическая музыка']	2/05/2021	Julia
+Card needs 2 sides, but has 1.	Я познакомился с другом в школе.	['Я познакомился с другом в школе.']	2/05/2021	Julia
+Card needs 2 sides, but has 1.	Мексиканская еда	['Мексиканская еда']	2/05/2021	Julia
+Card needs 2 sides, but has 1.	Ресторан называется Pedro’s	['Ресторан называется Pedro’s']	2/05/2021	Julia
+Card needs 2 sides, but has 1.	Мы ходим есть в Pedro’s	['Мы ходим есть в Pedro’s']	2/05/2021	Julia
+Card needs 2 sides, but has 1.	Когда я встречаюсь с этой подругой, мы идём в Pedro’s.	['Когда я встречаюсь с этой подругой, мы идём в Pedro’s.']	2/05/2021	Julia
 Card needs 2 sides, but has 1.	Старшая сестра 	['Старшая сестра ']	1/29/2021	Vitaliy
 Card needs 2 sides, but has 1.	Сосед по комнате / сосед по дому 	['Сосед по комнате / сосед по дому ']	1/29/2021	Vitaliy
 Card needs 2 sides, but has 1.	У моей сестры нет семьи сейчас	['У моей сестры нет семьи сейчас']	1/29/2021	Vitaliy

@@ -73,7 +73,7 @@ class Generator:
   
     flashcards = ''
     for card in self.card_deck:
-      flashcards += f'{card.english}\t{card.russian}\t{card.date} {card.tutor}\n'
+      flashcards += f'{card.english}\t{card.russian}\tReverse\t{card.date} {card.tutor}\n'
     with open(path, 'w', encoding='utf-8') as f:
       f.write(flashcards)
 
