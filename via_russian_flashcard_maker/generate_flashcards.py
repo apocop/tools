@@ -42,6 +42,8 @@ class Flashcard:
     elif len(self.sides) != 2:
       self.junk = True
       self.error += f'Card needs 2 sides, but has {len(self.sides)}.'
+    if self.english and self.russian:
+      self.english, self.russian = normalizer.normalize_capitalization(self.english, self.russian)
 
   def generate_tags(self):
     if self.header:
@@ -115,6 +117,13 @@ class Normalizer():
 
   def normalize(self, string):
     pass
+
+  def normalize_capitalization(self, en, ru):
+    """Normalize flashcard side capitalization."""
+    if not en.islower() and not ru.islower():
+      return en, ru
+    else:
+      return en.lower(), ru.lower()
 
 
 path = r'./via_russian_flashcard_maker/conversation.txt'
