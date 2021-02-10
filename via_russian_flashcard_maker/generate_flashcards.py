@@ -90,6 +90,8 @@ class Generator:
           self.junk_deck.append(card)
         else:
           self.card_deck.append(card)
+    self.card_deck.sort(key=lambda card: card.english.lower())
+    self.junk_deck.sort(key=lambda card: card.error.lower())
     self.print_report()
 
   def junk_to_tsv(self, path):
