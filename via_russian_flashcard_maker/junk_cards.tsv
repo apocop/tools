@@ -1,4 +1,13 @@
 Error	Line	Sides	Date	Tutor
+Can't separate English from Russian	Она - сестра моего папы	['Она ', ' сестра моего папы']	3/31/2021	Julia
+Can't separate English from Russian	Внук\внучка - внуки	['Внук\\внучка ', ' внуки']	3/31/2021	Julia
+Can't separate English from Russian	Оливер - собака моего соседа.	['Оливер ', ' собака моего соседа.']	3/31/2021	Julia
+Can't separate English from Russian	Пасха - 	['Пасха ', ' ']	3/3/2021	Nastya
+Can't separate English from Russian	Сорок - 40	['Сорок ', ' 40']	3/1/2021	Alisa
+Can't separate English from Russian	По-китайски	['По', 'китайски']	2/22/2021	Vitaliy
+Can't separate English from Russian	Друг - друзья 	['Друг ', ' друзья ']	2/15/2021	Katya
+Can't separate English from Russian	Учить русский -	['Учить русский ', '']	2/10/2021	Nastya
+Can't separate English from Russian	Говорить / писать / читать / смотреть фильмы по-русски !!!	['Говорить / писать / читать / смотреть фильмы по', 'русски !!!']	2/10/2021	Nastya
 Can't separate English from Russian	Мы едим где-нибудь	['Мы едим где', 'нибудь']	2/05/2021	Julia
 Can't separate English from Russian	Город - города	['Город ', ' города']	1/26/2021	Natasha
 Can't separate English from Russian	Дело - 	['Дело ', ' ']	1/20/2021	Vitaliy
@@ -7,6 +16,88 @@ Can't separate English from Russian	Восемь - 8	['Восемь ', ' 8']	1/0
 Can't separate English from Russian	Плюс - +	['Плюс ', ' +']	1/08/2021	Nastya
 Can't separate English from Russian	Минут - –	['Минут ', ' –']	1/08/2021	Nastya
 Can't separate English from Russian	Цельсия - С	['Цельсия ', ' С']	1/08/2021	Nastya
+Card needs 2 sides, but has 1.	Я только что вернулся 	['Я только что вернулся ']	4/09/2021	Alisa
+Card needs 2 sides, but has 1.	Не было молока	['Не было молока']	4/09/2021	Alisa
+Card needs 2 sides, but has 1.	Я надеюсь на удачу 	['Я надеюсь на удачу ']	4/09/2021	Alisa
+Card needs 2 sides, but has 1.	Я из Соединённых Штатов	['Я из Соединённых Штатов']	4/09/2021	Alisa
+Card needs 2 sides, but has 1.	Я из США	['Я из США']	4/09/2021	Alisa
+Card needs 2 sides, but has 1.	Я работаю до 	['Я работаю до ']	4/09/2021	Alisa
+Card needs 2 sides, but has 1.	Мы поедем в Грецию 	['Мы поедем в Грецию ']	4/09/2021	Alisa
+Card needs 2 sides, but has 1.	Ты можешь туда ехать?	['Ты можешь туда ехать?']	4/09/2021	Alisa
+Card needs 2 sides, but has 1.	Чай с молоком	['Чай с молоком']	4/09/2021	Alisa
+Card needs 2 sides, but has 1.	Круизный лайнер	['Круизный лайнер']	4/09/2021	Alisa
+Card needs 2 sides, but has 1.	Пароход	['Пароход']	4/09/2021	Alisa
+Card needs 2 sides, but has 1.	https://www.kachava.com/pages/ingredients	['https://www.kachava.com/pages/ingredients']	4/09/2021	Alisa
+Card needs 2 sides, but has 1.	Ей нечего делать.	['Ей нечего делать.']	4/05/2021	Julia
+Card needs 2 sides, but has 1.	Я его очень люблю.	['Я его очень люблю.']	4/05/2021	Julia
+Card needs 2 sides, but has 1.	У него была боль в спине.	['У него была боль в спине.']	4/05/2021	Julia
+Card needs 2 sides, but has 1.	Мне (было) грустно за него.	['Мне (было) грустно за него.']	4/05/2021	Julia
+Card needs 2 sides, but has 1.	Я не использую будильник.	['Я не использую будильник.']	4/05/2021	Julia
+Card needs 2 sides, but has 1.	https://us05web.zoom.us/j/86395437226?pwd=ZldhTVp2TldZcjkwZ09DUEhnM1NnUT09	['https://us05web.zoom.us/j/86395437226?pwd=ZldhTVp2TldZcjkwZ09DUEhnM1NnUT09']	4/02/2021	Julia
+Card needs 2 sides, but has 1.	Три недели назад я болел.	['Три недели назад я болел.']	3/31/2021	Julia
+Card needs 2 sides, but has 1.	Я ездил к семье.	['Я ездил к семье.']	3/31/2021	Julia
+Card needs 2 sides, but has 1.	Один год	['Один год']	3/31/2021	Julia
+Card needs 2 sides, but has 1.	Не все могут прийти на вечеринку	['Не все могут прийти на вечеринку']	3/31/2021	Julia
+Card needs 2 sides, but has 1.	Ему 7 лет	['Ему 7 лет']	3/31/2021	Julia
+Card needs 2 sides, but has 1.	Нам нужно больше людей	['Нам нужно больше людей']	3/31/2021	Julia
+Card needs 2 sides, but has 1.	Команда хочет нанять новых людей	['Команда хочет нанять новых людей']	3/31/2021	Julia
+Card needs 2 sides, but has 1.	Есть снег	['Есть снег']	3/29/2021	Alisa
+Card needs 2 sides, but has 1.	Нет снега	['Нет снега']	3/29/2021	Alisa
+Card needs 2 sides, but has 1.	У меня нет двора, но у (моей) кузины есть двор	['У меня нет двора, но у (моей) кузины есть двор']	3/26/2021	Vitaliy
+Card needs 2 sides, but has 1.	У нее нет двора	['У нее нет двора']	3/26/2021	Vitaliy
+Card needs 2 sides, but has 1.	У меня нет собаки, у (моего) соседа есть собака	['У меня нет собаки, у (моего) соседа есть собака']	3/26/2021	Vitaliy
+Card needs 2 sides, but has 1.	У собаки (моего) друга нет еды	['У собаки (моего) друга нет еды']	3/26/2021	Vitaliy
+Card needs 2 sides, but has 1.	У подруги моей сестры нет машины 	['У подруги моей сестры нет машины ']	3/26/2021	Vitaliy
+Card needs 2 sides, but has 1.	У босса моего брата нет мозга	['У босса моего брата нет мозга']	3/26/2021	Vitaliy
+Card needs 2 sides, but has 1.	У нас есть цель, но у нас нет плана 	['У нас есть цель, но у нас нет плана ']	3/26/2021	Vitaliy
+Card needs 2 sides, but has 1.	У нас есть план, но у нас нет цели. 	['У нас есть план, но у нас нет цели. ']	3/26/2021	Vitaliy
+Card needs 2 sides, but has 1.	Двоюродный брат сестры матери моего мужа	['Двоюродный брат сестры матери моего мужа']	3/26/2021	Vitaliy
+Card needs 2 sides, but has 1.	My husband’s mother’s sister’s cousin 	['My husband’s mother’s sister’s cousin ']	3/26/2021	Vitaliy
+Card needs 2 sides, but has 1.	Я бывший сосед кузена племянника брата твоего отца	['Я бывший сосед кузена племянника брата твоего отца']	3/26/2021	Vitaliy
+Card needs 2 sides, but has 1.	https://www.youtube.com/watch?v=cA6ektXRVak 	['https://www.youtube.com/watch?v=cA6ektXRVak ']	3/26/2021	Vitaliy
+Card needs 2 sides, but has 1.	Я не работаю по часам	['Я не работаю по часам']	3/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	День не очень длинный	['День не очень длинный']	3/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	Южная Калифорния	['Южная Калифорния']	3/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	Болело горло 	['Болело горло ']	3/10/2021	Alisa
+Card needs 2 sides, but has 1.	Гроб	['Гроб']	3/10/2021	Alisa
+Card needs 2 sides, but has 1.	В гробу отдохнем 	['В гробу отдохнем ']	3/10/2021	Alisa
+Card needs 2 sides, but has 1.	Пирожки с … (картошкой, мясом, вареньем, грибами, ...)	['Пирожки с … (картошкой, мясом, вареньем, грибами, ...)']	3/3/2021	Nastya
+Card needs 2 sides, but has 1.	Масленица	['Масленица']	3/3/2021	Nastya
+Card needs 2 sides, but has 1.	Мне не нужно работать 	['Мне не нужно работать ']	3/1/2021	Alisa
+Card needs 2 sides, but has 1.	Восемь часов в дороге	['Восемь часов в дороге']	3/1/2021	Alisa
+Card needs 2 sides, but has 1.	У друзей дома	['У друзей дома']	3/1/2021	Alisa
+Card needs 2 sides, but has 1.	На чем?	['На чем?']	3/1/2021	Alisa
+Card needs 2 sides, but has 1.	На моей машине	['На моей машине']	3/1/2021	Alisa
+Card needs 2 sides, but has 1.	На автобусе	['На автобусе']	3/1/2021	Alisa
+Card needs 2 sides, but has 1.	Можно видеть как люди бегают	['Можно видеть как люди бегают']	2/27/2021	Nastya
+Card needs 2 sides, but has 1.	Русский человек никогда не улыбается	['Русский человек никогда не улыбается']	2/24/2021	Nastya
+Card needs 2 sides, but has 1.	Сейчас он забыл	['Сейчас он забыл']	2/22/2021	Vitaliy
+Card needs 2 sides, but has 1.	Какой стиль музыки тебе нравится?	['Какой стиль музыки тебе нравится?']	2/22/2021	Vitaliy
+Card needs 2 sides, but has 1.	Сейчас нельзя пригласить даже одного друга? 	['Сейчас нельзя пригласить даже одного друга? ']	2/19/2021	Vitaliy
+Card needs 2 sides, but has 1.	Ходить в поход 	['Ходить в поход ']	2/17/2021	Nastya
+Card needs 2 sides, but has 1.	У меня будут дети (for plural)	['У меня будут дети (for plural)']	2/17/2021	Nastya
+Card needs 2 sides, but has 1.	Я играл на скрипке / на пианино / на гобое / на гитаре / ... 	['Я играл на скрипке / на пианино / на гобое / на гитаре / ... ']	2/17/2021	Nastya
+Card needs 2 sides, but has 1.	Турция	['Турция']	2/15/2021	Katya
+Card needs 2 sides, but has 1.	Тяжело	['Тяжело']	2/15/2021	Katya
+Card needs 2 sides, but has 1.	Религиозный	['Религиозный']	2/15/2021	Katya
+Card needs 2 sides, but has 1.	Тридцать минут	['Тридцать минут']	2/15/2021	Katya
+Card needs 2 sides, but has 1.	В России 	['В России ']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	В Украине 	['В Украине ']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	В Беларуси	['В Беларуси']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	В Азербайджане 	['В Азербайджане ']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	В Казахстане 	['В Казахстане ']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	В Туркменистане	['В Туркменистане']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	В Узбекистане 	['В Узбекистане ']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	В Таджикистане	['В Таджикистане']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	В Киргистане	['В Киргистане']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	В Грузии	['В Грузии']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	В Армении (Ереван)	['В Армении (Ереван)']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	В Эстонии	['В Эстонии']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	В Литве	['В Литве']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	В Латвии	['В Латвии']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	Ты знал, что так много стран говорят по русски? 	['Ты знал, что так много стран говорят по русски? ']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	Я посещаю Петербург.	['Я посещаю Петербург.']	2/12/2021	Vitaliy
+Card needs 2 sides, but has 1.	Секвойя (sequoia)	['Секвойя (sequoia)']	2/10/2021	Nastya
 Card needs 2 sides, but has 1.	С другими друзьями 	['С другими друзьями ']	2/08/2021	Alisa
 Card needs 2 sides, but has 1.	С друзьями	['С друзьями']	2/08/2021	Alisa
 Card needs 2 sides, but has 1.	Разные страны 	['Разные страны ']	2/08/2021	Alisa
@@ -42,5 +133,12 @@ Card needs 2 sides, but has 1.	Lesson: Trial Lesson	['Lesson: Trial Lesson']	1/0
 Card needs 2 sides, but has 1.	Topic: Meeting new tutor	['Topic: Meeting new tutor']	1/08/2021	Nastya
 Card needs 2 sides, but has 1.	Плюс шесть градусов по Цельсию	['Плюс шесть градусов по Цельсию']	1/08/2021	Nastya
 Card needs 2 sides, but has 1.	Сорок четыре (44) градуса по Фаренгейту	['Сорок четыре (44) градуса по Фаренгейту']	1/08/2021	Nastya
+Card needs 2 sides, but has 3.	Он - среднего возраста (middle-aged)	['Он ', ' среднего возраста (middle', 'aged)']	4/05/2021	Julia
+Card needs 2 sides, but has 3.	If the word ends in -tion in English, then in Russian it would be -ация	['If the word ends in ', 'tion in English, then in Russian it would be ', 'ация']	3/26/2021	Vitaliy
+Card needs 2 sides, but has 3.	С днём рождения - happy b-day	['С днём рождения ', ' happy b', 'day']	3/1/2021	Alisa
+Card needs 2 sides, but has 3.	Произведение (синоним - композиция) - composition	['Произведение (синоним ', ' композиция) ', ' composition']	2/22/2021	Vitaliy
+Card needs 2 sides, but has 3.	Опасно (-ый) - dangerous 	['Опасно (', 'ый) ', ' dangerous ']	2/19/2021	Vitaliy
+Card needs 2 sides, but has 3.	В каком-то -стане	['В каком', 'то ', 'стане']	2/12/2021	Vitaliy
 Card needs 2 sides, but has 3.	Вещь - thing вещи - things 	['Вещь ', ' thing вещи ', ' things ']	1/22/2021	Vitaliy
 Card needs 2 sides, but has 3.	I work … - Я работаю в IT. / Я - программист. 	['I work … ', ' Я работаю в IT. / Я ', ' программист. ']	1/20/2021	Vitaliy
+Card needs 2 sides, but has 4.	Information - информация, variation - вариация, intonation - интонация 	['Information ', ' информация, variation ', ' вариация, intonation ', ' интонация ']	3/26/2021	Vitaliy
